@@ -1,0 +1,10 @@
+ul li {
+  color: black;
+  list-style: none;
+  margin: 5px;
+  text-decoration: none;
+}
+
+ul li:active {
+  color: gray;
+}
