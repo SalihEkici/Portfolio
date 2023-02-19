@@ -60,7 +60,7 @@
       </div>
       <section
         id="about"
-        class="col-12 col-xl-8 p-5 m-auto d-flex flex-column flex-xl-row align-items-center"
+        class="fade-in col-12 col-xl-8 p-5 m-auto d-flex flex-column flex-xl-row align-items-center"
       >
         <img
           class="col-6 p-0"
@@ -111,51 +111,56 @@
         </div>
       </section>
 
-      <section id="projects" class="p-5">
+      <section id="projects" class="p-5 fade-in">
         <h2>My Projects</h2>
         <div class="col-12">
-          <div class="card mt-3 col-12">
-            <div class="d-flex flex-column flex-lg-row">
+          <div class="card mt-3 col-12 fade-in">
+            <div class="d-flex flex-column flex-xl-row">
               <img
-                class="p-0 col-12 col-lg-7"
+                class="p-0 col-12 col-xl-7"
                 src="src/images/veranda.png"
                 alt="veranda"
               />
               <div
-                class="col-12 col-lg-5 card-body d-flex flex-column justify-content-around align-items-center"
+                class="col-12 col-xl-5 card-body d-flex flex-column justify-content-around align-items-center"
               >
                 <div class="card-title">
                   Veranda&Beyond
                   <hr />
                 </div>
-                <div class="card-text p-5">
+                <div class="card-text p-2">
                   This is a project I made in collaboration with my brother. The
                   main function of the website is to browse a catalogue with
-                  verandas and other products and to request a free quote.
+                  verandas and other products and to request a free quote. The
+                  website has been indexed on google and currently we are
+                  working on search engine optimization.
                   <hr />
                   Technologies: HTML, CSS and Javascript
                 </div>
-                <a href="https://www.verandabeyond.be" class="btn btn-primary"
+                <a
+                  href="https://www.verandabeyond.be"
+                  class="btn btn-primary mt-2"
                   >Go to website</a
                 >
               </div>
             </div>
           </div>
-          <div class="card mt-3 col-12">
-            <div class="d-flex flex-column flex-lg-row">
+
+          <div class="card mt-3 col-12 fade-in">
+            <div class="d-flex flex-column flex-xl-row">
               <img
-                class="p-0 col-12 col-lg-7 order-1"
-                src="src/images/veranda.png"
+                class="p-0 col-12 col-xl-7 order-xl-1"
+                src="src/images/jobapplication.png"
                 alt="veranda"
               />
               <div
-                class="col-12 col-lg-5 card-body order-0 d-flex flex-column justify-content-around align-items-center"
+                class="col-12 col-xl-5 card-body order-xl-0 d-flex flex-column justify-content-around align-items-center"
               >
                 <div class="card-title">
                   Job Application Training Booking System
                   <hr />
                 </div>
-                <div class="card-text p-5">
+                <div class="card-text p-2">
                   This is an application that is currently under development. We
                   are working towards making an application which will be used
                   by students to book mock interviews with companies where the
@@ -166,7 +171,9 @@
                   <hr />
                   Technologies: Laravel, AlpineJS, Tailwind, SQL
                 </div>
-                <a href="https://www.verandabeyond.be" class="btn btn-primary"
+                <a
+                  href="https://www.verandabeyond.be"
+                  class="btn btn-primary mt-2"
                   >Go to website</a
                 >
               </div>
@@ -175,11 +182,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-light d-flex justify-content-around align-items-center">
-      <div>Salih Ekici</div>
 
-      <div>Thomas More - 2023</div>
-    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -195,5 +198,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

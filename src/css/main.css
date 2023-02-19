@@ -24,6 +24,9 @@ main #about img {
 
 main #projects {
   background-color: #f5f5f5; }
+  main #projects img {
+    width: 100%;
+    height: auto; }
   main #projects .card-title {
     font-size: 20px; }
 
@@ -37,6 +40,9 @@ main #projects {
       transition: 0.5s;
       transform: scale(1.2); }
 
-img {
-  width: 100%;
-  height: auto; }
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in; }
+
+.appear {
+  opacity: 1; }
