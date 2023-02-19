@@ -34,11 +34,11 @@ main #projects {
   height: 80px; }
   #socials a {
     margin: 20px;
-    color: black; }
+    color: #f27405; }
     #socials a :hover {
-      color: black;
       transition: 0.5s;
-      transform: scale(1.2); }
+      transform: scale(1.2);
+      color: #8e4403; }
 
 .fade-in {
   opacity: 0;
@@ -46,3 +46,8 @@ main #projects {
 
 .appear {
   opacity: 1; }
+
+.btn {
+  background-color: #f27405; }
+  .btn:hover {
+    background-color: #8e4403; }
