@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" width="device-width" initial-scale="1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -16,7 +22,7 @@
     <title>Portfolio - Salih Ekici</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
       <a class="navbar-brand" href="#">Salih Ekici</a>
       <button
         class="navbar-toggler"
@@ -40,34 +46,113 @@
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link"
-              href="src/files/Salih_Ekici_Portfolio.pdf"
-              target="_blank"
-              >Projects</a
-            >
+            <a class="nav-link" href="#projects">Projects </a>
           </li>
         </ul>
       </div>
     </nav>
     <main>
       <div id="banner" class="d-flex justify-content-center align-items-center">
-        <p class="text-center">
-          Hi, I'm Salih. <br />
-          An Applied Computer Science student.
-        </p>
+        <h3 class="text-center">
+          Hi, I'm Salih an Applied Computer Science student. <br />
+          Welcome to my portfolio!
+        </h3>
       </div>
       <section
-        class="col-12 p-5 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+        id="about"
+        class="col-12 col-lg-8 p-5 m-auto d-flex flex-column flex-lg-row align-items-center"
       >
         <img class="col-6 p-0" src="src/images/profile_picture.jpeg" alt="" />
-        <div class="col-6">
-          I am Salih Ekici, an Applied Computer Science student in Thomas More
-          Hogeschool.
+        <div class="col-12 col-lg-6">
+          <h3>About Me</h3>
+          <p>
+            I am a 23 year old student in Thomas More Hogeschool, studying the
+            AI track in Applied Computer Science. I have dreams of either
+            becoming an application developer or an AI developer in a big
+            company.
+            <br />
+            <br />
+            I enjoy sports such as basketball, volleyball and table tennis and
+            recently I picked up weight lifting as well. During most of my free
+            time I love watching tech and coding videos on YouTube.
+            <br />
+            <br />
+            Please feel free to check out my socials down below.
+          </p>
+
+          <div id="socials" class="d-flex flex-row flex-">
+            <a href="https://github.com/SalihEkici"
+              ><i class="fa-brands fa-2x fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/salih-ekici-517a52191/"
+              ><i class="fa-brands fa-2x fa-linkedin"></i
+            ></a>
+            <a href="mailto:ekicisalih0@gmail.com"
+              ><i class="fa-solid fa-2x fa-envelope"></i
+            ></a>
+            <a
+              href="src/files/Salih_Ekici_Portfolio.pdf"
+              download="CV_SalihEkici"
+              class="btn btn-danger text-white"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="p-5">
+        <h2>My Projects</h2>
+        <div class="col-12">
+          <div class="card mt-3 col-12">
+            <div class="d-flex flex-column flex-lg-row">
+              <img
+                class="p-0 col-12 col-lg-7"
+                src="src/images/veranda.png"
+                alt="veranda"
+              />
+              <div
+                class="col-12 col-lg-5 card-body d-flex flex-column justify-content-around align-items-center"
+              >
+                <div class="card-title">Veranda&Beyond</div>
+                <div class="card-text p-5">
+                  This is a project I made in collaboration with my brother. The
+                  website is used as service to request quotes for verandas.
+                </div>
+                <a href="https://www.verandabeyond.be" class="btn btn-primary"
+                  >Go to website</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3 mb-3 col-12">
+            <div class="d-flex flex-column flex-lg-row">
+              <img
+                class="p-0 col-12 col-lg-7"
+                src="src/images/veranda.png"
+                alt="veranda"
+              />
+              <div
+                class="col-12 col-lg-5 card-body d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="card-title">Veranda&Beyond</div>
+                <div class="card-text">
+                  This is a project I made in collaboration with my brother. The
+                  website is used as service to request quotes for verandas.
+                </div>
+                <a href="https://www.verandabeyond.be" class="btn btn-primary"
+                  >Go to website</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="bg-light d-flex justify-content-around align-items-center">
+      <div>Salih Ekici</div>
 
+      <div>Thomas More - 2023</div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
