@@ -22,7 +22,7 @@
     <title>Portfolio - Salih Ekici</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="#">Salih Ekici</a>
       <button
         class="navbar-toggler"
@@ -54,60 +54,95 @@
     <main>
       <div id="banner" class="d-flex justify-content-center align-items-center">
         <h3 class="text-center">
-          Hi, I'm Salih an Applied Computer Science student. <br />
+          Hi, I'm Salih. <br />
+          An Applied Computer Science student. <br />
           Welcome to my portfolio!
         </h3>
       </div>
       <section
         id="about"
-        class="fade-in col-12 col-xl-8 m-auto d-flex flex-column flex-xl-row align-items-center"
+        class="fade-in col-12 m-auto d-flex flex-column align-items-center"
       >
         <img
-          class="col-3 p-0 rounded-circle"
-          src="src/images/profile_picture.jpeg"
+          class="col-3 p-0"
+          src="src/images/profile_picture.png"
           alt="profile picture"
         />
         <div class="col-12 col-xl-8 d-flex">
-          <div class="d-flex flex-column justify-content-between">
-            <div>
-              <h3>About Me</h3>
-              <div>
-                I am a 23 year old student in Thomas More Hogeschool, studying
-                the AI track in Applied Computer Science.
+          <div class="">
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+              <div class="col-12 col-lg-5 p-0 m-0">
+                <h3>About Me</h3>
+                <div>
+                  <div>
+                    I am a 23 year old student in Thomas More Hogeschool,
+                    studying the AI track in Applied Computer Science.
+                  </div>
+                  <br />
+                  <div>
+                    I enjoy sports such as basketball, volleyball and table
+                    tennis and recently I picked up weight lifting as well.
+                    During most of my free time I love watching tech and coding
+                    videos on YouTube.
+                  </div>
+                </div>
               </div>
-              <br />
-              <div>
-                I enjoy sports such as basketball, volleyball and table tennis
-                and recently I picked up weight lifting as well. During most of
-                my free time I love watching tech and coding videos on YouTube.
+              <div class="col-12 col-lg-5 d-flex flex-wrap p-4">
+                <div>
+                  <p><b>Looking for:</b></p>
+                  <ul>
+                    <li>ERP consultancy</li>
+                    <li>Web application development</li>
+                    <li>Android development</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><b>Languages:</b></p>
+                  <ul>
+                    <li>English (Native)</li>
+                    <li>Turkish (Native)</li>
+                    <li>Dutch (Elementary)</li>
+                  </ul>
+                </div>
+                <div>
+                  <p><b>Technologies:</b></p>
+                  <ul>
+                    <li>Python, Jinja, Flask</li>
+                    <li>PHP, Laravel</li>
+                    <li>Java, Springboot, Thymeleaf</li>
+                    <li>Docker, Kubernetes</li>
+                    <li>MySQL, SQLite, MongoDB</li>
+                    <li>WPF, ASP.NET MVC</li>
+                  </ul>
+                </div>
               </div>
-              <br />
-              <div>Please feel free to check out my socials down below.</div>
             </div>
-
-            <div id="socials" class="d-flex flex-row flex-wrap">
-              <a href="https://github.com/SalihEkici"
-                ><i class="fa-brands fa-2x fa-github"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/salih-ekici-517a52191/"
-                ><i class="fa-brands fa-2x fa-linkedin"></i
-              ></a>
-              <a href="mailto:ekicisalih0@gmail.com"
-                ><i class="fa-solid fa-2x fa-envelope"></i
-              ></a>
-              <div>
-                <a
-                  href="src/files/Salih_Ekici_Portfolio.pdf"
-                  target="_blank"
-                  class="btn text-white"
-                  >View CV</a
-                >
-                <a
-                  href="src/files/Salih_Ekici_Portfolio.pdf"
-                  download="CV_SalihEkici"
-                  class="btn text-white"
-                  >Download CV</a
-                >
+            <div>
+              <p>Please check out my socials and CV down below!'</p>
+              <div id="socials" class="d-flex flex-row flex-wrap m-4">
+                <a href="https://github.com/SalihEkici"
+                  ><i class="fa-brands fa-2x fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/salih-ekici-517a52191/"
+                  ><i class="fa-brands fa-2x fa-linkedin"></i
+                ></a>
+                <a href="mailto:ekicisalih0@gmail.com"
+                  ><i class="fa-solid fa-2x fa-envelope"></i
+                ></a>
+                <div>
+                  <a
+                    href="src/files/Salih_Ekici_Portfolio.pdf"
+                    target="_blank"
+                    class="btn text-white"
+                    >View CV</a
+                  >
+                  <a
+                    href="src/files/Salih_Ekici_Portfolio.pdf"
+                    download="CV_SalihEkici"
+                    class="btn text-white"
+                    >Download CV</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -117,28 +152,30 @@
       <section id="projects" class="p-5 fade-in">
         <h2>My Projects</h2>
         <div
-          class="d-flex flex-column flex-xl-row flex-wrap col-12 justify-content-around"
+          class="d-flex flex-column align-items-xl-stretch align-items-center flex-xl-row flex-wrap col-12 justify-content-around"
         >
-          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+          <div class="card col-12 col-md-8 col-xl-3 mb-4 p-0">
             <img
-              class="card-img-top"
+              class="card-img-top p-0"
               src="src/images/requirement analysis.png"
               alt="Staff Management System Requirement Analysis"
             />
             <div class="card-body">
               <h5 class="card-title">
-                Staff Management System Requirement Analysis
+                Staff Management System Requirements Analysis
               </h5>
               <p class="card-text mt-auto">
-                <small class="text-muted">Technologies: StarUML, Axure</small>
+                <small class="text-muted">Technologies: UML, Axure</small>
               </p>
-              <button class="btn myBtn btn-primary">More Information</button>
+              <button id="staffManagementBtn" class="btn myBtn btn-primary">
+                More Information
+              </button>
             </div>
           </div>
 
-          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+          <div class="card col-12 col-md-8 col-xl-3 mb-4 p-0">
             <img
-              class="card-img-top"
+              class="card-img-top p-0"
               src="src/images/jobapplication.png"
               alt="Job Application Training Booking System"
             />
@@ -152,13 +189,15 @@
                   >Technologies: Laravel, AlpineJS, Tailwind, SQL</small
                 >
               </p>
-              <button class="btn myBtn btn-primary">More Information</button>
+              <button id="jobApplicationBtn" class="btn myBtn btn-primary">
+                More Information
+              </button>
             </div>
           </div>
 
-          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+          <div class="card col-12 col-md-8 col-xl-3 mb-4 p-0">
             <img
-              class="card-img-top"
+              class="card-img-top p-0"
               src="src/images/veranda.png"
               alt="Veranda&Beyond"
             />
@@ -170,13 +209,15 @@
                   >Technologies: HTML, CSS and Javascript</small
                 >
               </p>
-              <button class="btn myBtn btn-primary">More Information</button>
+              <button id="verandaBtn" class="btn myBtn btn-primary">
+                More Information
+              </button>
             </div>
           </div>
 
-          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+          <div class="card col-12 col-md-8 col-xl-3 mb-4 p-0">
             <img
-              class="card-img-top"
+              class="card-img-top p-0"
               src="src/images/pokedex.png"
               alt="Pokemon Database Manager"
             />
@@ -187,7 +228,9 @@
                   >Technologies: SQLite, .NET, WPF</small
                 >
               </p>
-              <button class="btn myBtn btn-primary">More Information</button>
+              <button id="pokemonBtn" class="btn myBtn btn-primary">
+                More Information
+              </button>
             </div>
           </div>
         </div>
@@ -198,7 +241,20 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <div class="p-5">
+          <h2 id="projectName"></h2>
+          <div>
+            <p id="projectBackground"></p>
+            <div>
+              <h4>Personal Contributions:</h4>
+              <p id="contributions"></p>
+            </div>
+            <div>
+              <h4>Technologies Used:</h4>
+              <p id="technologies"></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script
