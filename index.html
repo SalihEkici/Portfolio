@@ -22,7 +22,7 @@
     <title>Portfolio - Salih Ekici</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed navbar-light bg-light">
       <a class="navbar-brand" href="#">Salih Ekici</a>
       <button
         class="navbar-toggler"
@@ -60,22 +60,20 @@
       </div>
       <section
         id="about"
-        class="fade-in col-12 col-xl-8 p-5 m-auto d-flex flex-column flex-xl-row align-items-center"
+        class="fade-in col-12 col-xl-8 m-auto d-flex flex-column flex-xl-row align-items-center"
       >
         <img
-          class="col-6 p-0"
+          class="col-3 p-0 rounded-circle"
           src="src/images/profile_picture.jpeg"
           alt="profile picture"
         />
-        <div class="col-12 col-xl-6 d-flex">
+        <div class="col-12 col-xl-8 d-flex">
           <div class="d-flex flex-column justify-content-between">
             <div>
               <h3>About Me</h3>
               <div>
                 I am a 23 year old student in Thomas More Hogeschool, studying
-                the AI track in Applied Computer Science. I have dreams of
-                either becoming an application developer or an AI developer in a
-                big company.
+                the AI track in Applied Computer Science.
               </div>
               <br />
               <div>
@@ -97,18 +95,20 @@
               <a href="mailto:ekicisalih0@gmail.com"
                 ><i class="fa-solid fa-2x fa-envelope"></i
               ></a>
-              <a
-                href="src/files/Salih_Ekici_Portfolio.pdf"
-                target="_blank"
-                class="btn text-white"
-                >View CV</a
-              >
-              <a
-                href="src/files/Salih_Ekici_Portfolio.pdf"
-                download="CV_SalihEkici"
-                class="btn text-white"
-                >Download CV</a
-              >
+              <div>
+                <a
+                  href="src/files/Salih_Ekici_Portfolio.pdf"
+                  target="_blank"
+                  class="btn text-white"
+                  >View CV</a
+                >
+                <a
+                  href="src/files/Salih_Ekici_Portfolio.pdf"
+                  download="CV_SalihEkici"
+                  class="btn text-white"
+                  >Download CV</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -116,78 +116,91 @@
 
       <section id="projects" class="p-5 fade-in">
         <h2>My Projects</h2>
-        <div class="col-12">
-          <div class="card mt-3 col-12 fade-in">
-            <div class="d-flex flex-column flex-xl-row">
-              <img
-                class="p-0 col-12 col-xl-7"
-                src="src/images/veranda.png"
-                alt="veranda"
-              />
-              <div
-                class="col-12 col-xl-5 card-body d-flex flex-column justify-content-around align-items-center"
-              >
-                <div class="card-title">
-                  Veranda&Beyond
-                  <hr />
-                </div>
-                <div class="card-text p-2">
-                  This is a project I made in collaboration with my brother. The
-                  main function of the website is to browse a catalogue with
-                  verandas and other products and to request a free quote. The
-                  website has been indexed on google and currently we are
-                  working on search engine optimization.
-                  <hr />
-                  <div class="text-center font-weight-bold">
-                    Technologies: HTML, CSS and Javascript
-                  </div>
-                </div>
-                <a
-                  href="https://www.verandabeyond.be"
-                  class="btn text-white mt-2"
-                  >Go to website</a
-                >
-              </div>
+        <div
+          class="d-flex flex-column flex-xl-row flex-wrap col-12 justify-content-around"
+        >
+          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+            <img
+              class="card-img-top"
+              src="src/images/requirement analysis.png"
+              alt="Staff Management System Requirement Analysis"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Staff Management System Requirement Analysis
+              </h5>
+              <p class="card-text mt-auto">
+                <small class="text-muted">Technologies: StarUML, Axure</small>
+              </p>
+              <button class="btn myBtn btn-primary">More Information</button>
             </div>
           </div>
 
-          <div class="card mt-3 col-12 fade-in">
-            <div class="d-flex flex-column flex-xl-row">
-              <img
-                class="p-0 col-12 col-xl-7 order-xl-1"
-                src="src/images/jobapplication.png"
-                alt="veranda"
-              />
-              <div
-                class="col-12 col-xl-5 card-body order-xl-0 d-flex flex-column justify-content-around align-items-center"
-              >
-                <div class="card-title">
-                  Job Application Training Booking System
-                  <hr />
-                </div>
-                <div class="card-text p-2">
-                  This is an application that is currently under development. We
-                  are working towards making an application which will be used
-                  by students to book mock interviews with companies where the
-                  student will earn interview experience. The system will also
-                  include questionaires which can be created by admins and
-                  filled in by students.
+          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+            <img
+              class="card-img-top"
+              src="src/images/jobapplication.png"
+              alt="Job Application Training Booking System"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Job Application Training Booking System
+              </h5>
 
-                  <hr />
-                  <div class="text-center font-weight-bold">
-                    Technologies: Laravel, AlpineJS, Tailwind, SQL
-                  </div>
-                </div>
-                <p href="https://www.verandabeyond.be" class="mt-2">
-                  Coming soon
-                </p>
-              </div>
+              <p class="card-text mt-auto">
+                <small class="text-muted"
+                  >Technologies: Laravel, AlpineJS, Tailwind, SQL</small
+                >
+              </p>
+              <button class="btn myBtn btn-primary">More Information</button>
+            </div>
+          </div>
+
+          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+            <img
+              class="card-img-top"
+              src="src/images/veranda.png"
+              alt="Veranda&Beyond"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Veranda&Beyond</h5>
+
+              <p class="card-text mt-auto">
+                <small class="text-muted"
+                  >Technologies: HTML, CSS and Javascript</small
+                >
+              </p>
+              <button class="btn myBtn btn-primary">More Information</button>
+            </div>
+          </div>
+
+          <div class="card col-12 col-md-8 col-xl-3 mb-4">
+            <img
+              class="card-img-top"
+              src="src/images/pokedex.png"
+              alt="Pokemon Database Manager"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pokemon Database Manager</h5>
+              <p class="card-text mt-auto">
+                <small class="text-muted"
+                  >Technologies: SQLite, .NET, WPF</small
+                >
+              </p>
+              <button class="btn myBtn btn-primary">More Information</button>
             </div>
           </div>
         </div>
       </section>
     </main>
-
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
