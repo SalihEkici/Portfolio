@@ -60,7 +60,7 @@ Array.from(btns).forEach(function (btn) {
       case "verandaBtn":
         projectTitle.innerHTML = "Veranda&amp;Beyond";
         projectBackground.innerHTML = `This is a group project that I have done along side with my brother Emre Ekici. 
-        We were asked by our father to make a website that functions as a catalogue for porches, carports, sliding glass door systems and awnings.
+        We were asked to make a website that functions as a catalogue for porches, carports, sliding glass door systems and awnings.
         `;
         technologies.innerHTML = `HTML, CSS, Javascript`;
         contributions.innerHTML = `I helped to implement:
@@ -93,7 +93,9 @@ Array.from(btns).forEach(function (btn) {
         projectTitle.innerHTML =
           "Staff Management System Requirements Analysis";
         projectBackground.innerHTML = `A group project that was meant to help us learn about requirements analysis. We were tasked
-        with meeting with a client to go over a potential project. During this project we made the use case diagram and prototypes for the client.
+        with meeting with a client to go over a potential project. The main premise of this project was to create a system that would be used by an au pair, an elderly
+        couple and other people. This application would serve as a system that can be used as a planner for the au pair and the elderly couple. Workers have the ability to upload
+        invoices and schedule times of when they would be able to work while the au pair has more administrative abilities. During this project we made the use case diagram and prototypes for the client.
         This project helped me learn to work in a team setting, think of edge cases and use Axure to make prototypes.`;
         technologies.innerHTML = "UML, Axure";
         contributions.innerHTML = `I helped to:
