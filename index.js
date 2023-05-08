@@ -55,6 +55,7 @@ Array.from(btns).forEach(function (btn) {
         <li>Write the report for the case study</li>
         </ul>
         `;
+
         break;
       case "verandaBtn":
         projectTitle.innerHTML = "Veranda&amp;Beyond";
@@ -98,7 +99,7 @@ Array.from(btns).forEach(function (btn) {
         contributions.innerHTML = `I helped to:
         <ul>
         <li>Make the use case diagram in StarUML</li>
-        <li>Make the prototypes for manage meals, edit users edit profile and create users.</li>
+        <li>Make the prototypes for manage meals, edit users, edit profile and create users.</li>
         </ul>`;
         break;
     }
