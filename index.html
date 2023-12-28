@@ -86,7 +86,21 @@
                       >
                     </li>
                     <li>
-                      <i class="fa-solid fa-caret-right"></i> <b>Age:</b> 23
+                      <i class="fa-solid fa-caret-right"></i> <b>Age:</b> 
+                      <script>
+                        function ageCalculator(){
+                          var dob = new Date("01/04/2000");  
+                          var month_diff = Date.now() - dob.getTime();  
+                          var age_dt = new Date(month_diff);   
+                          var year = age_dt.getUTCFullYear();  
+                          var age = Math.abs(year - 1970);  
+                            
+                          //display the calculated age  
+                          document.write( age );  
+                        }
+
+                        ageCalculator()
+                      </script>
                     </li>
                     <li>
                       <i class="fa-solid fa-caret-right"></i>
@@ -206,6 +220,33 @@
               </p>
               <p>
                 <a href="https://ddpa.jobapplicationtraining.be" target="_blank"
+                  >View Application</a
+                >
+              </p>
+              <button id="jobApplicationBtn" class="btn myBtn btn-primary">
+                More Information
+              </button>
+            </div>
+          </div>
+          
+          <div class="card col-12 col-md-8 col-xl-3 mb-4 p-0">
+            <img
+              class="card-img-top p-0"
+              src=""
+              alt="Job Application Training Booking System"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Self Driving Car
+              </h5>
+
+              <p class="card-text mt-auto">
+                <small class="text-muted"
+                  >Technologies: Python, OpenCV, Deep Learning</small
+                >
+              </p>
+              <p>
+                <a href="" target="_blank"
                   >View Application</a
                 >
               </p>
