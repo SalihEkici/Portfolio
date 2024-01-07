@@ -51,8 +51,8 @@ Array.from(btns).forEach(function (btn) {
         contributions.innerHTML = `
         <ul>
         <li>Make a github pipeline to automatically build a new artifact when a new version is pushed.</li>
-        <li>Make the UI and the code behind</li>
-        <li>Write the report for the case study</li>
+        <li>Make the UI and the code behind.</li>
+        <li>Write the report for the case study.</li>
         </ul>
         `;
 
@@ -65,10 +65,10 @@ Array.from(btns).forEach(function (btn) {
         technologies.innerHTML = `HTML, CSS, Javascript`;
         contributions.innerHTML = `I helped to implement:
         <ul>
-        <li>Designing the UI and implementing the javascript for the website</li>
-        <li>Forms for customers to design their own personal porches</li>
-        <li>Search engine optimization</li>
-        <li>Implementing language support for Dutch and English</li>
+        <li>Designing the UI and implementing the javascript for the website.</li>
+        <li>Forms for customers to design their own personal porches.</li>
+        <li>Search engine optimization.</li>
+        <li>Implementing language support for Dutch and English.</li>
         </ul>
           
         `;
@@ -82,8 +82,8 @@ Array.from(btns).forEach(function (btn) {
         contributions.innerHTML = `
           I contributed to the project by
           <ul>
-          <li>Creating the livewire components</li>
-          <li>Setting up routing and middleware</li>
+          <li>Creating the livewire components.</li>
+          <li>Setting up routing and middleware.</li>
           <li>Managing and viewing companies and announcement functionalities.</li>
           <li>Helped to implement dual language support and user support to pages.</li>
           </ul>
@@ -100,8 +100,21 @@ Array.from(btns).forEach(function (btn) {
         technologies.innerHTML = "UML, Axure";
         contributions.innerHTML = `I helped to:
         <ul>
-        <li>Make the use case diagram in StarUML</li>
+        <li>Make the use case diagram in StarUML.</li>
         <li>Make the prototypes for manage meals, edit users, edit profile and create users.</li>
+        </ul>`;
+        break;
+        case "selfDrivingCarBtn":
+        projectTitle.innerHTML =
+          "Self Driving Car";
+        projectBackground.innerHTML = `A group project that helped us to gain experience in the field of deep learning. We were tasked with 
+        training a model to be able to clear an easy track on a game of our choosing.`;
+        technologies.innerHTML = "Python, OpenCV, Tensorflow";
+        contributions.innerHTML = `I helped to:
+        <ul>
+        <li>Gather training data.</li>
+        <li>Create the model infrastructure.</li>
+        <li>Tweak the model.</li>
         </ul>`;
         break;
     }
