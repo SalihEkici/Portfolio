@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 $buttonColor: #2E367C;
 $buttonColorHover: darken($buttonColor, 20%);
 $backgroundColorAlternating: #D0B0D0;
@@ -5,7 +7,7 @@ $backgroundColorAlternating: #D0B0D0;
 html {
   body {
     font-size: 20px;
-    font-family: Conamore;
+    font-family: "Roboto", serif;
   }
 }
 
@@ -15,13 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Cormorant', serif;
   color: #2E367C;
   text-align: center;
 }
 
-b,
-i {
+i,a {
   color: #2E367C;
 }
 
