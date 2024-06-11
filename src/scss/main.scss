@@ -22,7 +22,7 @@ h6 {
   text-align: center;
 }
 
-i,a {
+i,a,b {
   color: #2E367C;
 }
 
@@ -62,7 +62,6 @@ main {
       img {
         border-radius: 100%;
       }
-
       li {
         list-style: none;
         color: black;
@@ -114,6 +113,9 @@ main {
 
   #internship {
     margin-top: 4rem;
+    h1,h2,h3,h4,h5,h6{
+      text-align: left;
+    }
   }
 }
 

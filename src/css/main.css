@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 html body {
   font-size: 20px;
-  font-family: Conamore;
+  font-family: "Roboto", serif;
 }
 
 h1,
@@ -9,13 +10,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Cormorant", serif;
   color: #2E367C;
   text-align: center;
 }
 
-b,
-i {
+i, a, b {
   color: #2E367C;
 }
 
@@ -86,6 +86,9 @@ main #projects .card .card-title {
 }
 main #internship {
   margin-top: 4rem;
+}
+main #internship h1, main #internship h2, main #internship h3, main #internship h4, main #internship h5, main #internship h6 {
+  text-align: left;
 }
 
 #socials {

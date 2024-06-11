@@ -51,12 +51,12 @@
     <main>
         <section id="internship">
             <h2>Internship</h2>
-            <div class="d-flex flex-row justify-content-around p-5">
+            <div class="d-flex flex-row justify-content-around flex-column flex-lg-row p-5">
                 <div id="information col-8">
                     <div>
                         <h3>Title: SKILLSEEKER</h3>
                     </div>
-                    <div>
+                    <div id="summary">
                         <p>
                             From <b>February 24 2024</b> to <b>May 29 2024</b>, I interned at <b>Mediaan Conclusian</b>
                             a
@@ -103,7 +103,22 @@
                             growth and learning.
                         </p>
                     </div>
+                    <div id="contributions">
+                        <h2>Contributions</h2>
+                        <ul>
+                            <li>
+                                <b>Backend Development:</b> Worked on developing the backend APIs that power the application.
+                            </li>
+                            <li>
+                                <b>Frontend Development:</b> Contributed to the design and development of the user-friendly frontend interface.
+                            </li>
+                            <li>
+                                <b>Rating System:</b> Contirbuted to the implementation of the rating system using the Neo4j graph database to establish relationships between skills and employees based on their self-assessed scores.
+                            </li>
+                        </ul>
+                    </div>
                     <div id="documents">
+                        <h2>Documents</h2>
                         <div>
                             <b><a href="./src/files/internship/Skillseeker project plan.pptx" target="_blank">Project plan<i class="fa fa-download" aria-hidden="true"></i></a></b>
                         </div>
@@ -116,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <img src="src/images/mediaan.png" alt="">
+                    <img src="src/images/mediaan.png" alt="mediaan" class="d-none d-lg-block">
                 </div>
             </div>
         </section>
