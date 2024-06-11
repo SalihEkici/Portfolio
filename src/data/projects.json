@@ -1,65 +1,98 @@
 [
     {
-      "id": "pokemonBtn",
-      "title": "Pokemon Database",
-      "background": "For my \"DevOps and Security\" course, we were given a case study with three options to choose from. I selected an individual project to develop a desktop application using WPF (Windows Presentation Foundation) and .NET. My project was a Pokédex application that allows users to add, view, update, and delete Pokémon entries in a database. This project provided a comprehensive learning experience, enabling me to gain proficiency with WPF, .NET, and SQLite, as well as to understand and apply the core principles of DevOps. Additionally, I learned how to set up GitHub workflows and automated deployment pipelines, ensuring that the application could be efficiently built and deployed.",
-      "technologies": ".Net, WPF",
-      "contributions": [
-        "Created a GitHub pipeline to automatically build a new artifact whenever a new version of the code is pushed to the repository.",
-        "Developed an intuitive and user-friendly interface using WPF, ensuring that users can easily navigate and interact with the application.",
-        "Documented the entire development process, including the design decisions, implementation details, and challenges faced."
-      ],
-      "remarks": "This project not only enhanced my technical skills in software development and database management but also deepened my knowledge of DevOps principles and practices. The experience of setting up automated workflows and deployment pipelines was particularly valuable, preparing me for future projects in a professional development environment."
+        "btnid": "pokemonBtn",
+        "title": "Pokemon Database",
+        "background": "For my \"DevOps and Security\" course, we were given a case study with three options to choose from. I selected an individual project to develop a desktop application using WPF (Windows Presentation Foundation) and .NET. My project was a Pokédex application that allows users to add, view, update, and delete Pokémon entries in a database. This project provided a comprehensive learning experience, enabling me to gain proficiency with WPF, .NET, and SQLite, as well as to understand and apply the core principles of DevOps. Additionally, I learned how to set up GitHub workflows and automated deployment pipelines, ensuring that the application could be efficiently built and deployed.",
+        "technologies": ".Net, WPF",
+        "images":[
+            "./src/images/pokedex/pokedex.png",
+            "./src/images/pokedex/add.png",
+            "./src/images/pokedex/home.png"
+        ],
+        "contributions": [
+            "Created a GitHub pipeline to automatically build a new artifact whenever a new version of the code is pushed to the repository.",
+            "Developed an intuitive and user-friendly interface using WPF, ensuring that users can easily navigate and interact with the application.",
+            "Documented the entire development process, including the design decisions, implementation details, and challenges faced."
+        ],
+        "remarks": "This project not only enhanced my technical skills in software development and database management but also deepened my knowledge of DevOps principles and practices. The experience of setting up automated workflows and deployment pipelines was particularly valuable, preparing me for future projects in a professional development environment."
     },
     {
-      "id": "verandaBtn",
-      "title": "Veranda&amp;Beyond",
-      "background": "This project was a collaborative effort between myself and my brother, Emre Ekici. We were tasked with creating a website that functions as a comprehensive catalogue for porches, carports, sliding glass door systems, and awnings. The aim was to provide potential customers with a user-friendly interface to explore and design their own outdoor structures. This project allowed us to apply our skills in web development and design, resulting in a professional and functional website.",
-      "technologies": "HTML, CSS, Javascript",
-      "contributions": [
-        "Designing the UI and implementing the javascript for the website.",
-        "Forms for customers to design their own personal porches.",
-        "Search engine optimization.",
-        "Implementing language support for Dutch and English."
-      ],
-      "remarks": "This project not only strengthened my technical skills in web development but also provided valuable experience in working collaboratively on a real-world application. The end result was a professional and functional website that met the client’s requirements and provided a useful tool for customers."
+        "btnid": "verandaBtn",
+        "title": "Veranda&amp;Beyond",
+        "background": "This project was a collaborative effort between myself and my brother, Emre Ekici. We were tasked with creating a website that functions as a comprehensive catalogue for porches, carports, sliding glass door systems, and awnings. The aim was to provide potential customers with a user-friendly interface to explore and design their own outdoor structures. This project allowed us to apply our skills in web development and design, resulting in a professional and functional website.",
+        "technologies": "HTML, CSS, Javascript",
+        "images": [
+            "./src/images/veranda/home.png",
+            "./src/images/veranda/products.png",
+            "./src/images/veranda/services.png",
+            "./src/images/veranda/forms.png",
+            "./src/images/veranda/contact.png"
+        ],
+        "contributions": [
+            "Designing the UI and implementing the javascript for the website.",
+            "Forms for customers to design their own personal porches.",
+            "Search engine optimization.",
+            "Implementing language support for Dutch and English."
+        ],
+        "remarks": "This project not only strengthened my technical skills in web development but also provided valuable experience in working collaboratively on a real-world application. The end result was a professional and functional website that met the client’s requirements and provided a useful tool for customers."
     },
     {
-      "id": "jobApplicationBtn",
-      "title": "Job Application Training Booking System",
-      "background": "This project was undertaken during the second semester of our second year as part of a group effort. The primary objective was to develop a booking application that students could use to schedule mock interviews with various companies. This project provided a practical learning experience in working within an agile environment and collaborating effectively as a team. Through this project, I gained valuable insights into the processes and best practices of agile software development, as well as enhanced my teamwork and communication skills.",
-      "technologies": "PHP, Laravel",
-      "contributions": [
-        "Developed dynamic and reactive Livewire components to enhance the user experience by providing real-time interactivity without requiring full page reloads.",
-        "Configured the application’s routing system to handle various user requests and direct them to the appropriate controllers and views.",
-        "Created functionalities for administrators to manage company profiles, ensuring that all relevant information was easily accessible and up-to-date.",
-        "Implemented features for viewing and managing announcements, allowing users to stay informed about upcoming events and important updates.",
-        "Contributed to the implementation of dual language support, making the application accessible to a broader user base by providing content in multiple languages."
-      ],
-      "remarks": "This project was a significant learning experience, allowing me to apply my technical skills in a real-world scenario and understand the importance of agile methodologies and teamwork in successful software development."
+        "btnid": "jobApplicationBtn",
+        "title": "Job Application Training Booking System",
+        "background": "This project was undertaken during the second semester of our second year as part of a group effort. The primary objective was to develop a booking application that students could use to schedule mock interviews with various companies. This project provided a practical learning experience in working within an agile environment and collaborating effectively as a team. Through this project, I gained valuable insights into the processes and best practices of agile software development, as well as enhanced my teamwork and communication skills.",
+        "technologies": "PHP, Laravel",
+        "images": [
+            "./src/images/projectphp/home.png",
+            "./src/images/projectphp/announcements.png",
+            "./src/images/projectphp/files.png",
+            "./src/images/projectphp/companies.png",
+            "./src/images/projectphp/timeslots.png"
+        ],
+        "contributions": [
+            "Developed dynamic and reactive Livewire components to enhance the user experience by providing real-time interactivity without requiring full page reloads.",
+            "Configured the application’s routing system to handle various user requests and direct them to the appropriate controllers and views.",
+            "Created functionalities for administrators to manage company profiles, ensuring that all relevant information was easily accessible and up-to-date.",
+            "Implemented features for viewing and managing announcements, allowing users to stay informed about upcoming events and important updates.",
+            "Contributed to the implementation of dual language support, making the application accessible to a broader user base by providing content in multiple languages."
+        ],
+        "remarks": "This project was a significant learning experience, allowing me to apply my technical skills in a real-world scenario and understand the importance of agile methodologies and teamwork in successful software development."
     },
     {
-      "id": "staffManagementBtn",
-      "title": "Staff Management System Requirements Analysis",
-      "background": "This project was a collaborative effort undertaken as part of a course, with a focus on requirements analysis. Our task was to engage with a client to discuss and outline the specifications for a potential Staff Management System. The primary objective was to develop a system designed for use by an au pair, an elderly couple, and other individuals, serving as a planner and management tool. The system was intended to help the au pair and the elderly couple manage their schedules, with additional functionalities for other workers to upload invoices and schedule their work times. The au pair would also have additional administrative capabilities within the application. During the project, our team created use case diagrams and prototypes to present to the client. This experience was instrumental in honing my teamwork skills, understanding and considering edge cases, and learning to use Axure for prototyping.",
-      "technologies": "UML, Axure",
-      "contributions": [
-        "Developed comprehensive use case diagrams using StarUML, detailing all user interactions and system functionalities.",
-        "Designed and created detailed prototypes for key functionalities of the system using Axure"
-      ],
-      "remarks": "Throughout this project, I developed critical skills in collaboration, detailed analysis, and technical prototyping, which are essential for successful software development and client engagement."
+        "btnid": "staffManagementBtn",
+        "title": "Staff Management System Requirements Analysis",
+        "background": "This project was a collaborative effort undertaken as part of a course, with a focus on requirements analysis. Our task was to engage with a client to discuss and outline the specifications for a potential Staff Management System. The primary objective was to develop a system designed for use by an au pair, an elderly couple, and other individuals, serving as a planner and management tool. The system was intended to help the au pair and the elderly couple manage their schedules, with additional functionalities for other workers to upload invoices and schedule their work times. The au pair would also have additional administrative capabilities within the application. During the project, our team created use case diagrams and prototypes to present to the client. This experience was instrumental in honing my teamwork skills, understanding and considering edge cases, and learning to use Axure for prototyping.",
+        "technologies": "UML, Axure",
+        "images":[],
+        "contributions": [
+            "Developed comprehensive use case diagrams using StarUML, detailing all user interactions and system functionalities.",
+            "Designed and created detailed prototypes for key functionalities of the system using Axure"
+        ],
+        "remarks": "Throughout this project, I developed critical skills in collaboration, detailed analysis, and technical prototyping, which are essential for successful software development and client engagement."
     },
     {
-      "id": "selfDrivingCarBtn",
-      "title": "Self Driving Car",
-      "background": "This project was a collaborative effort aimed at gaining practical experience in the field of deep learning. The primary objective was to train a machine learning model capable of navigating an easy track in a selected video game autonomously. Through this project, we delved into the intricacies of model training, data handling, and performance optimization.",
-      "technologies": "Python, OpenCV, Tensorflow",
-      "contributions": [
-        "Collected a diverse set of training data by recording gameplay sessions. This involved capturing game frames and corresponding control inputs (steering angles, acceleration) to create a robust dataset for the model.",
-        "Designed the architecture of the neural network model, selecting appropriate layers and configurations to handle the complexity of the task.",
-        "Utilized techniques such as data augmentation and regularization to enhance model robustness and prevent overfitting."
-      ],
-      "remarks": "This project provided invaluable hands-on experience with deep learning techniques and tools, reinforcing our understanding of the challenges and best practices in developing autonomous systems."
+        "btnid": "selfDrivingCarBtn",
+        "title": "Self Driving Car",
+        "background": "This project was a collaborative effort aimed at gaining practical experience in the field of deep learning. The primary objective was to train a machine learning model capable of navigating an easy track in a selected video game autonomously. Through this project, we delved into the intricacies of model training, data handling, and performance optimization.",
+        "technologies": "Python, OpenCV, Tensorflow",
+        "images":[],
+        "contributions": [
+            "Collected a diverse set of training data by recording gameplay sessions. This involved capturing game frames and corresponding control inputs (steering angles, acceleration) to create a robust dataset for the model.",
+            "Designed the architecture of the neural network model, selecting appropriate layers and configurations to handle the complexity of the task.",
+            "Utilized techniques such as data augmentation and regularization to enhance model robustness and prevent overfitting."
+        ],
+        "remarks": "This project provided invaluable hands-on experience with deep learning techniques and tools, reinforcing our understanding of the challenges and best practices in developing autonomous systems."
+    },
+    {
+        "btnid": "project40btn",
+        "title": "Elderly Fall Detection and Monitoring System",
+        "background": "This project focused on enhancing the safety and independence of elderly individuals living alone. Utilizing Mediapipe's keypoint detection model, the application monitors homes to detect falls in real-time and alerts loved ones and nearby health officials for prompt assistance. Additionally, it tracks the elderly's movement to monitor their well-being. This solution provides peace of mind by reducing response times in emergencies and supporting seniors' desire to live independently.",
+        "technologies": " Python, Mediapipe, OpenCV",
+        "images":[],
+        "contributions": [
+            "Configured the Mediapipe keypoint detection model for fall detection and movement tracking, ensuring accurate monitoring of the elderly.",
+            "Developed the video upload system to Azure cloud storage, enabling the display of incident footage in the application.",
+            "Implemented the video generation system to capture and compile 15 seconds of footage before and after detected incidents."
+        ],
+        "remarks": "This project provided critical experience in applying computer vision and cloud technologies to real-world problems, highlighting the importance of rapid response systems for vulnerable populations. Additionally, gained valuable experience in teamwork and pair programming."
     }
-  ]
-  
+]

@@ -1,5 +1,22 @@
 html body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-family: Conamore;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #2E367C;
+  text-align: center;
+}
+
+b,
+i {
+  color: #2E367C;
 }
 
 nav li {
@@ -8,7 +25,7 @@ nav li {
 }
 
 main section {
-  padding: 3rem;
+  padding: 5rem;
 }
 main #banner {
   height: 100vh;
@@ -23,14 +40,48 @@ main #banner h3 {
   color: white;
   font-size: 2rem;
 }
+main #about {
+  background-color: #D0B0D0;
+}
 main #about #about-inner {
   margin-top: 2rem;
 }
+main #about #about-inner img {
+  border-radius: 100%;
+}
+main #about #about-inner li {
+  list-style: none;
+  color: black;
+}
+main #skills .skill-container {
+  margin-top: 2rem;
+}
+main #skills #technical-skills-container {
+  margin-top: 2rem;
+}
+main #skills #soft-skills-container {
+  margin-top: 2rem;
+}
+main #skills .progress {
+  width: 100%;
+}
+main #skills .progress .progress-bar {
+  backcolor: #D0B0D0;
+}
 main #projects {
-  background-color: #f5f5f5;
+  text-align: center;
+  background-color: #D0B0D0;
   margin-bottom: 5rem;
 }
-main #projects .card-title {
+main #projects .card {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 5%;
+}
+main #projects .card .card-img-top {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+main #projects .card .card-title {
   font-size: 20px;
 }
 main #internship {
@@ -42,47 +93,34 @@ main #internship {
 }
 #socials a {
   margin: 20px;
-  color: #f27405;
+  color: #2E367C;
 }
 #socials a :hover {
   transition: 0.5s;
-  color: #8e4403;
+  color: #121632;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
@@ -103,7 +141,7 @@ main #internship {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 250ms ease-in;
+  transition: opacity 400ms ease-in;
 }
 
 .appear {
@@ -111,10 +149,10 @@ main #internship {
 }
 
 .btn {
-  background-color: #f27405;
+  background-color: #2E367C;
 }
 .btn:hover {
-  background-color: #8e4403;
+  background-color: #121632;
 }
 
 /*# sourceMappingURL=main.css.map */
