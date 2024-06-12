@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
-$buttonColor: #2E367C;
+$buttonColor: #2e367c;
 $buttonColorHover: darken($buttonColor, 20%);
-$backgroundColorAlternating: #D0B0D0;
+$backgroundColorAlternating: #d0b0d0;
 
 html {
   body {
@@ -17,13 +17,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cormorant', serif;
-  color: #2E367C;
+  font-family: "Cormorant", serif;
+  color: #2e367c;
   text-align: center;
 }
 
-i,a,b {
-  color: #2E367C;
+i,
+a,
+b {
+  color: #2e367c;
 }
 
 nav {
@@ -97,7 +99,7 @@ main {
     margin-bottom: 5rem;
 
     .card {
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.7);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
       border-radius: 5%;
 
       .card-img-top {
@@ -113,7 +115,12 @@ main {
 
   #internship {
     margin-top: 4rem;
-    h1,h2,h3,h4,h5,h6{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       text-align: left;
     }
   }
@@ -144,7 +151,6 @@ main {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-
 }
 
 .modal-content {
@@ -175,7 +181,7 @@ main {
 
 .fade-in {
   opacity: 0;
-  transition: opacity 400ms ease-in;
+  transition: opacity 500ms ease-in;
 }
 
 .appear {
@@ -187,5 +193,50 @@ main {
 
   &:hover {
     background-color: $buttonColorHover;
+  }
+}
+
+/***** Global Slide *****/
+.slide-right,
+.slide-left {
+  width: 100%;
+}
+
+/***** Slide Right *****/
+.slide-right-animation {
+  animation: 3s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-left-animation {
+  animation: 3s slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.slide-down-animation {
+  animation: 3s slide-down;
+}
+@keyframes slide-down {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0%;
   }
 }

@@ -1,9 +1,45 @@
 const faders = document.querySelectorAll(".fade-in");
-
+const slideLefters = document.querySelectorAll(".slide-left");
+const slideRighters = document.querySelectorAll(".slide-right");
+new Typewriter("#typewriter", {
+  strings: ["Full Stack Developer", "Programmer", "Continous Learner"],
+  autoStart: true,
+  loop: true,
+});
 const appearOptions = {
   threshhold: 1,
   rootMargin: "0px 0px -200px 0px",
 };
+
+const slideRightOnScroll = new IntersectionObserver(function (
+  entries,
+  slideRightOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("slide-right-animation");
+      slideRightOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+const slideLeftOnScroll = new IntersectionObserver(function (
+  entries,
+  slideLeftOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("slide-left-animation");
+      slideLeftOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
 
 const appearOnScroll = new IntersectionObserver(function (
   entries,
@@ -18,25 +54,37 @@ const appearOnScroll = new IntersectionObserver(function (
     }
   });
 },
-  appearOptions);
+appearOptions);
+
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  fetch('./src/data/projects.json')
-    .then(response => response.json())
-    .then(data => {
+slideLefters.forEach((slideLefter) => {
+  slideLeftOnScroll.observe(slideLefter);
+});
+
+slideRighters.forEach((slideRighter) => {
+  slideRightOnScroll.observe(slideRighter);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  fetch("./src/data/projects.json")
+    .then((response) => response.json())
+    .then((data) => {
       const modal = document.getElementById("myModal");
       const span = document.getElementsByClassName("close")[0];
-      const carousel = this.documentElement.getElementsByClassName("carousel-inner")[0];
+      const carousel =
+        this.documentElement.getElementsByClassName("carousel-inner")[0];
       const projectTitle = document.getElementById("projectName");
       const projectBackground = document.getElementById("projectBackground");
       const technologies = document.getElementById("technologies");
       const contributions = document.getElementById("contributions");
       const remarks = document.getElementById("remarks");
       const generateContributionsHTML = (contributions) => {
-        return contributions.map(contribution => `<li>${contribution}</li>`).join('');
+        return contributions
+          .map((contribution) => `<li>${contribution}</li>`)
+          .join("");
       };
       const generateCarouselImages = (images) => {
         const carouselItems = [];
@@ -51,8 +99,8 @@ document.addEventListener('DOMContentLoaded', function () {
               </div>`);
           }
         });
-        return carouselItems.join('');
-      }
+        return carouselItems.join("");
+      };
       const openModal = (project) => {
         carousel.innerHTML = "";
         modal.style.display = "block";
@@ -61,11 +109,13 @@ document.addEventListener('DOMContentLoaded', function () {
         technologies.innerHTML = project.technologies;
         carousel.innerHTML = generateCarouselImages(project.images);
         console.log(carousel.innerHTML);
-        contributions.innerHTML = `<ul>${generateContributionsHTML(project.contributions)}</ul>`;
+        contributions.innerHTML = `<ul>${generateContributionsHTML(
+          project.contributions
+        )}</ul>`;
         remarks.innerHTML = project.remarks;
       };
 
-      data.forEach(project => {
+      data.forEach((project) => {
         const btn = document.getElementById(project.btnid);
         if (btn) {
           btn.onclick = () => openModal(project);
@@ -74,7 +124,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       span.onclick = function () {
         modal.style.display = "none";
-        
       };
 
       window.onclick = function (event) {
