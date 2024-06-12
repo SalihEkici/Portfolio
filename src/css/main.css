@@ -66,11 +66,7 @@ main #projects {
   background-color: #d0b0d0;
   margin-bottom: 5rem; }
   main #projects .card {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
-    border-radius: 5%; }
-    main #projects .card .card-img-top {
-      border-top-left-radius: 5%;
-      border-top-right-radius: 5%; }
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7); }
     main #projects .card .card-title {
       font-size: 20px; }
 
