@@ -42,7 +42,7 @@ main #about {
   main #about #about-inner {
     margin-top: 2rem; }
     main #about #about-inner img {
-      border-radius: 100%; }
+      clip-path: circle(50%); }
     main #about #about-inner li {
       list-style: none;
       color: black; }

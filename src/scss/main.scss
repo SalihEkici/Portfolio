@@ -62,7 +62,7 @@ main {
       margin-top: 2rem;
 
       img {
-        border-radius: 100%;
+        clip-path: circle(50%);
       }
       li {
         list-style: none;
